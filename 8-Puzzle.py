@@ -77,13 +77,7 @@ def solve(initial, empty_tile_pos, final):
 				minimum.empty_tile_pos[1] + col[i], ]
 				
 			if isSafe(new_tile_pos[0], new_tile_pos[1]):
-				child = newNode(minimum.mat,
-								minimum.empty_tile_pos,
-								new_tile_pos,
-								minimum.level + 1,
-								minimum, final,)
-
-				# Add child to list of live nodes
+				child = newNode(minimum.mat,minimum.empty_tile_pos,new_tile_pos,minimum.level + 1,minimum, final,)
 				pq.push(child)
 initial = [ [ 1, 2, 3 ],
 			[ 5, 6, 0 ],
