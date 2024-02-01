@@ -25,4 +25,4 @@ def N_queens(n):
     return False
 N_queens(N)
 for i in board:
-    print (i)
+    print (" ".join("Q" if x==1 else "  " for x in i))
